@@ -88,32 +88,32 @@
                 event.preventDefault();
             } else {
 
-            
-            db.collection("links").where("name", "==", name)
-                .get()
-                .then((querySnapshot) => {
-                    if (querySnapshot.size > 0) {
-                        alert("Error: Name already exists!");
-                    } else {
-                        db.collection("links").add({
-                            name: name,
-                            url: url
-                        })
-                            .then((docRef) => {
-                                alert("Done!");
-                                localStorage.clear();
-                                console.clear();
-                                localStorage.setItem('finalURL', window.location.origin + "/" + name);
-                                location.reload();
+
+                db.collection("links").where("name", "==", name)
+                    .get()
+                    .then((querySnapshot) => {
+                        if (querySnapshot.size > 0) {
+                            alert("Error: Name already exists!");
+                        } else {
+                            db.collection("links").add({
+                                name: name,
+                                url: url
                             })
-                            .catch((error) => {
-                                console.error("Error adding document: ", error);
-                            });
-                    }
-                })
-                .catch((error) => {
-                    console.log("Error getting documents: ", error);
-                });
+                                .then((docRef) => {
+                                    alert("Done!");
+                                    localStorage.clear();
+                                    console.clear();
+                                    localStorage.setItem('finalURL', window.location.origin + "/" + name);
+                                    location.reload();
+                                })
+                                .catch((error) => {
+                                    console.error("Error adding document: ", error);
+                                });
+                        }
+                    })
+                    .catch((error) => {
+                        console.log("Error getting documents: ", error);
+                    });
             }
         }
     </script>
