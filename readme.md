@@ -10,7 +10,7 @@ To run this script, ensure you have the following:
 This script is compatible with all Windows devices. 🖥️
 
 ## Usage
-The scripts uses Microsoft.XMLHTTP, MSXML2.XMLHTTP.3.0, Adodb.Stream, WScript.Network, WScript.Shell, Scripting.FileSystemObject, WMPlayer.OCX and some other object component to retrieve 2 data files from URLs and create a subfolder (avoid antivirus flag) that contains the code to change the desktop background image and playes the downloaded mp3 file in loop in the background 🔧
+Allows users to create shortened urls and accessed globally🔧
 
 ## Disclaimer
 This script is for **educational purposes only**. The author does not endorse or encourage any **illegal or unethical activities**. The author is not responsible for any **harm or damage** caused by the use of this script. Use at **your own risk**.
