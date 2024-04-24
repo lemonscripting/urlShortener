@@ -7,7 +7,7 @@ To run this script, ensure you have the following:
 - web hosting platform🌐
 
 ## Compatibility
-This script is compatible with all Windows devices. 🖥️
+This script is compatible with all devices. 🖥️
 
 ## Usage
 Allows users to create shortened urls and accessed globally. Fill in /firebaseConfig.js to host your own url shortener🔧
